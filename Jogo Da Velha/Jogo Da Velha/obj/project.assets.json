@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Senai.CATEAS21104172\\Downloads\\jogodavelha\\LaraAngeli-CTDS20\\Jogo Da Velha\\Jogo Da Velha\\Jogo Da Velha.csproj",
+      "projectUniqueName": "C:\\Users\\Senai.CATEAS21104172\\Downloads\\testeeeereeeeee-main\\Jogo Da Velha\\Jogo Da Velha\\Jogo Da Velha.csproj",
       "projectName": "Jogo Da Velha",
-      "projectPath": "C:\\Users\\Senai.CATEAS21104172\\Downloads\\jogodavelha\\LaraAngeli-CTDS20\\Jogo Da Velha\\Jogo Da Velha\\Jogo Da Velha.csproj",
+      "projectPath": "C:\\Users\\Senai.CATEAS21104172\\Downloads\\testeeeereeeeee-main\\Jogo Da Velha\\Jogo Da Velha\\Jogo Da Velha.csproj",
       "packagesPath": "C:\\Users\\Senai.CATEAS21104172\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Senai.CATEAS21104172\\Downloads\\jogodavelha\\LaraAngeli-CTDS20\\Jogo Da Velha\\Jogo Da Velha\\obj\\",
+      "outputPath": "C:\\Users\\Senai.CATEAS21104172\\Downloads\\testeeeereeeeee-main\\Jogo Da Velha\\Jogo Da Velha\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

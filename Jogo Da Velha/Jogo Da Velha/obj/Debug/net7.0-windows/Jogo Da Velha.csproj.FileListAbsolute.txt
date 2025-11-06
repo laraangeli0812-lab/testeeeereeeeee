@@ -16,3 +16,21 @@ C:\Users\Senai.CATEAS21104172\Downloads\jogodavelha\LaraAngeli-CTDS20\Jogo Da Ve
 C:\Users\Senai.CATEAS21104172\Downloads\jogodavelha\LaraAngeli-CTDS20\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.pdb
 C:\Users\Senai.CATEAS21104172\Downloads\jogodavelha\LaraAngeli-CTDS20\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.genruntimeconfig.cache
 C:\Users\Senai.CATEAS21104172\Downloads\jogodavelha\LaraAngeli-CTDS20\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\ref\Jogo Da Velha.dll
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\bin\Debug\net7.0-windows\Jogo Da Velha.exe
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\bin\Debug\net7.0-windows\Jogo Da Velha.deps.json
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\bin\Debug\net7.0-windows\Jogo Da Velha.runtimeconfig.json
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\bin\Debug\net7.0-windows\Jogo Da Velha.dll
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\bin\Debug\net7.0-windows\Jogo Da Velha.pdb
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.csproj.AssemblyReference.cache
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo_Da_Velha.formjogodavelha.resources
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo_Da_Velha.Properties.Resources.resources
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.csproj.GenerateResource.cache
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.AssemblyInfoInputs.cache
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.AssemblyInfo.cs
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.csproj.CoreCompileInputs.cache
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.dll
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\refint\Jogo Da Velha.dll
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.pdb
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\Jogo Da Velha.genruntimeconfig.cache
+C:\Users\Senai.CATEAS21104172\Downloads\testeeeereeeeee-main\Jogo Da Velha\Jogo Da Velha\obj\Debug\net7.0-windows\ref\Jogo Da Velha.dll

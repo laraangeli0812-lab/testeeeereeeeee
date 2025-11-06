@@ -31,29 +31,32 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formjogodavelha));
             panel1 = new Panel();
             reiniciar = new Button();
-            button2 = new Button();
+            btnsair = new Button();
             iniciar = new Button();
             opcoes = new GroupBox();
-            O = new RadioButton();
+            o = new RadioButton();
             x = new RadioButton();
             empate = new GroupBox();
+            txtempates = new TextBox();
             placar = new GroupBox();
+            labelO = new Label();
+            labelX = new Label();
             jogadores = new GroupBox();
-            textBox11 = new TextBox();
-            textBox10 = new TextBox();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox12 = new TextBox();
+            jogador2 = new TextBox();
+            jogador1 = new TextBox();
+            btn1 = new TextBox();
+            btn2 = new TextBox();
+            btn3 = new TextBox();
+            btn8 = new TextBox();
+            btn7 = new TextBox();
+            btn4 = new TextBox();
+            btn5 = new TextBox();
+            btn6 = new TextBox();
+            btn9 = new TextBox();
             panel1.SuspendLayout();
             opcoes.SuspendLayout();
             empate.SuspendLayout();
+            placar.SuspendLayout();
             jogadores.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,7 +65,7 @@
             panel1.BackColor = Color.DarkCyan;
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(reiniciar);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btnsair);
             panel1.Controls.Add(iniciar);
             panel1.Controls.Add(opcoes);
             panel1.Controls.Add(empate);
@@ -77,7 +80,7 @@
             // reiniciar
             // 
             reiniciar.BackColor = Color.Gainsboro;
-            reiniciar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            reiniciar.Font = new Font("Bauer", 12F, FontStyle.Bold, GraphicsUnit.Point);
             reiniciar.ForeColor = Color.DarkCyan;
             reiniciar.Location = new Point(414, 179);
             reiniciar.Name = "reiniciar";
@@ -86,22 +89,23 @@
             reiniciar.Text = "reiniciar";
             reiniciar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnsair
             // 
-            button2.BackColor = Color.Gainsboro;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.DarkCyan;
-            button2.Location = new Point(566, 179);
-            button2.Name = "button2";
-            button2.Size = new Size(131, 36);
-            button2.TabIndex = 4;
-            button2.Text = "sair";
-            button2.UseVisualStyleBackColor = false;
+            btnsair.BackColor = Color.Gainsboro;
+            btnsair.Font = new Font("Bauer", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnsair.ForeColor = Color.DarkCyan;
+            btnsair.Location = new Point(566, 179);
+            btnsair.Name = "btnsair";
+            btnsair.Size = new Size(131, 36);
+            btnsair.TabIndex = 4;
+            btnsair.Text = "sair";
+            btnsair.UseVisualStyleBackColor = false;
+            btnsair.Click += btnsair_Click;
             // 
             // iniciar
             // 
             iniciar.BackColor = Color.Gainsboro;
-            iniciar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iniciar.Font = new Font("Bauer", 12F, FontStyle.Bold, GraphicsUnit.Point);
             iniciar.ForeColor = Color.DarkCyan;
             iniciar.Location = new Point(261, 179);
             iniciar.Name = "iniciar";
@@ -112,9 +116,9 @@
             // 
             // opcoes
             // 
-            opcoes.Controls.Add(O);
+            opcoes.Controls.Add(o);
             opcoes.Controls.Add(x);
-            opcoes.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            opcoes.Font = new Font("Bauer", 18F, FontStyle.Regular, GraphicsUnit.Point);
             opcoes.ForeColor = SystemColors.ControlLight;
             opcoes.Location = new Point(12, 141);
             opcoes.Name = "opcoes";
@@ -122,27 +126,26 @@
             opcoes.TabIndex = 2;
             opcoes.TabStop = false;
             opcoes.Text = "Opções";
-            opcoes.Enter += opcoes_Enter;
             // 
-            // O
+            // o
             // 
-            O.AutoSize = true;
-            O.Font = new Font("Microsoft Sans Serif", 21F, FontStyle.Regular, GraphicsUnit.Point);
-            O.Location = new Point(96, 32);
-            O.Name = "O";
-            O.Size = new Size(54, 36);
-            O.TabIndex = 2;
-            O.TabStop = true;
-            O.Text = "O";
-            O.UseVisualStyleBackColor = true;
+            o.AutoSize = true;
+            o.Font = new Font("BadaBoom BB", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
+            o.Location = new Point(91, 24);
+            o.Name = "o";
+            o.Size = new Size(54, 44);
+            o.TabIndex = 2;
+            o.TabStop = true;
+            o.Text = "O";
+            o.UseVisualStyleBackColor = true;
             // 
             // x
             // 
             x.AutoSize = true;
-            x.Font = new Font("Microsoft Sans Serif", 21F, FontStyle.Regular, GraphicsUnit.Point);
-            x.Location = new Point(33, 32);
+            x.Font = new Font("BadaBoom BB", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
+            x.Location = new Point(28, 24);
             x.Name = "x";
-            x.Size = new Size(51, 36);
+            x.Size = new Size(51, 44);
             x.TabIndex = 1;
             x.TabStop = true;
             x.Text = "X";
@@ -150,8 +153,8 @@
             // 
             // empate
             // 
-            empate.Controls.Add(textBox12);
-            empate.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            empate.Controls.Add(txtempates);
+            empate.Font = new Font("Bauer", 18F, FontStyle.Regular, GraphicsUnit.Point);
             empate.ForeColor = SystemColors.ControlLight;
             empate.Location = new Point(521, 13);
             empate.Name = "empate";
@@ -160,9 +163,25 @@
             empate.TabStop = false;
             empate.Text = "Empate";
             // 
+            // txtempates
+            // 
+            txtempates.BackColor = Color.DarkCyan;
+            txtempates.BorderStyle = BorderStyle.None;
+            txtempates.Font = new Font("Verdana", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            txtempates.ForeColor = SystemColors.ButtonFace;
+            txtempates.Location = new Point(22, 56);
+            txtempates.Multiline = true;
+            txtempates.Name = "txtempates";
+            txtempates.Size = new Size(132, 30);
+            txtempates.TabIndex = 0;
+            txtempates.Text = "0";
+            txtempates.TextAlign = HorizontalAlignment.Center;
+            // 
             // placar
             // 
-            placar.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            placar.Controls.Add(labelO);
+            placar.Controls.Add(labelX);
+            placar.Font = new Font("Bauer", 18F, FontStyle.Regular, GraphicsUnit.Point);
             placar.ForeColor = SystemColors.ControlLight;
             placar.Location = new Point(276, 13);
             placar.Name = "placar";
@@ -170,12 +189,33 @@
             placar.TabIndex = 1;
             placar.TabStop = false;
             placar.Text = "Placar";
+            placar.Enter += placar_Enter;
+            // 
+            // labelO
+            // 
+            labelO.AutoSize = true;
+            labelO.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelO.Location = new Point(19, 90);
+            labelO.Name = "labelO";
+            labelO.Size = new Size(40, 18);
+            labelO.TabIndex = 1;
+            labelO.Text = "O =";
+            // 
+            // labelX
+            // 
+            labelX.AutoSize = true;
+            labelX.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelX.Location = new Point(19, 50);
+            labelX.Name = "labelX";
+            labelX.Size = new Size(44, 18);
+            labelX.TabIndex = 0;
+            labelX.Text = "X = ";
             // 
             // jogadores
             // 
-            jogadores.Controls.Add(textBox11);
-            jogadores.Controls.Add(textBox10);
-            jogadores.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            jogadores.Controls.Add(jogador2);
+            jogadores.Controls.Add(jogador1);
+            jogadores.Font = new Font("Bauer", 18F, FontStyle.Regular, GraphicsUnit.Point);
             jogadores.ForeColor = SystemColors.ControlLight;
             jogadores.Location = new Point(13, 13);
             jogadores.Name = "jogadores";
@@ -184,144 +224,135 @@
             jogadores.TabStop = false;
             jogadores.Text = "Jogadores";
             // 
-            // textBox11
+            // jogador2
             // 
-            textBox11.BackColor = Color.Gainsboro;
-            textBox11.Location = new Point(16, 74);
-            textBox11.Multiline = true;
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(225, 34);
-            textBox11.TabIndex = 1;
+            jogador2.BackColor = Color.Gainsboro;
+            jogador2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            jogador2.Location = new Point(16, 74);
+            jogador2.Multiline = true;
+            jogador2.Name = "jogador2";
+            jogador2.Size = new Size(225, 34);
+            jogador2.TabIndex = 1;
             // 
-            // textBox10
+            // jogador1
             // 
-            textBox10.BackColor = Color.Gainsboro;
-            textBox10.Location = new Point(16, 34);
-            textBox10.Multiline = true;
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(225, 34);
-            textBox10.TabIndex = 0;
+            jogador1.BackColor = Color.Gainsboro;
+            jogador1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            jogador1.Location = new Point(16, 34);
+            jogador1.Multiline = true;
+            jogador1.Name = "jogador1";
+            jogador1.Size = new Size(225, 34);
+            jogador1.TabIndex = 0;
             // 
-            // textBox1
+            // btn1
             // 
-            textBox1.BackColor = Color.DarkCyan;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(234, 246);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(82, 64);
-            textBox1.TabIndex = 1;
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            btn1.BackColor = Color.DarkCyan;
+            btn1.BorderStyle = BorderStyle.None;
+            btn1.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn1.Location = new Point(234, 246);
+            btn1.Multiline = true;
+            btn1.Name = "btn1";
+            btn1.Size = new Size(82, 64);
+            btn1.TabIndex = 1;
+            btn1.TextAlign = HorizontalAlignment.Center;
+            btn1.Click += btn_click;
             // 
-            // textBox3
+            // btn2
             // 
-            textBox3.BackColor = Color.DarkCyan;
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Segoe UI", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(326, 246);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(82, 64);
-            textBox3.TabIndex = 3;
-            textBox3.TextAlign = HorizontalAlignment.Center;
+            btn2.BackColor = Color.DarkCyan;
+            btn2.BorderStyle = BorderStyle.None;
+            btn2.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn2.Location = new Point(326, 246);
+            btn2.Multiline = true;
+            btn2.Name = "btn2";
+            btn2.Size = new Size(82, 64);
+            btn2.TabIndex = 3;
+            btn2.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox2
+            // btn3
             // 
-            textBox2.BackColor = Color.DarkCyan;
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Segoe UI", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(418, 246);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(82, 64);
-            textBox2.TabIndex = 5;
-            textBox2.TextAlign = HorizontalAlignment.Center;
+            btn3.BackColor = Color.DarkCyan;
+            btn3.BorderStyle = BorderStyle.None;
+            btn3.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn3.Location = new Point(418, 246);
+            btn3.Multiline = true;
+            btn3.Name = "btn3";
+            btn3.Size = new Size(82, 64);
+            btn3.TabIndex = 5;
+            btn3.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox4
+            // btn8
             // 
-            textBox4.BackColor = Color.DarkCyan;
-            textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Font = new Font("Segoe UI", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(326, 386);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(82, 64);
-            textBox4.TabIndex = 7;
-            textBox4.TextAlign = HorizontalAlignment.Center;
+            btn8.BackColor = Color.DarkCyan;
+            btn8.BorderStyle = BorderStyle.None;
+            btn8.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn8.Location = new Point(326, 386);
+            btn8.Multiline = true;
+            btn8.Name = "btn8";
+            btn8.Size = new Size(82, 64);
+            btn8.TabIndex = 7;
+            btn8.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox5
+            // btn7
             // 
-            textBox5.BackColor = Color.DarkCyan;
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Segoe UI", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(234, 386);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(82, 64);
-            textBox5.TabIndex = 6;
-            textBox5.TextAlign = HorizontalAlignment.Center;
+            btn7.BackColor = Color.DarkCyan;
+            btn7.BorderStyle = BorderStyle.None;
+            btn7.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn7.Location = new Point(234, 386);
+            btn7.Multiline = true;
+            btn7.Name = "btn7";
+            btn7.Size = new Size(82, 64);
+            btn7.TabIndex = 6;
+            btn7.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox6
+            // btn4
             // 
-            textBox6.BackColor = Color.DarkCyan;
-            textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Segoe UI", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox6.Location = new Point(234, 316);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(82, 64);
-            textBox6.TabIndex = 6;
-            textBox6.TextAlign = HorizontalAlignment.Center;
+            btn4.BackColor = Color.DarkCyan;
+            btn4.BorderStyle = BorderStyle.None;
+            btn4.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn4.Location = new Point(234, 316);
+            btn4.Multiline = true;
+            btn4.Name = "btn4";
+            btn4.Size = new Size(82, 64);
+            btn4.TabIndex = 6;
+            btn4.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox7
+            // btn5
             // 
-            textBox7.BackColor = Color.DarkCyan;
-            textBox7.BorderStyle = BorderStyle.None;
-            textBox7.Font = new Font("Segoe UI", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox7.Location = new Point(326, 316);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(82, 64);
-            textBox7.TabIndex = 7;
-            textBox7.TextAlign = HorizontalAlignment.Center;
+            btn5.BackColor = Color.DarkCyan;
+            btn5.BorderStyle = BorderStyle.None;
+            btn5.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn5.Location = new Point(326, 316);
+            btn5.Multiline = true;
+            btn5.Name = "btn5";
+            btn5.Size = new Size(82, 64);
+            btn5.TabIndex = 7;
+            btn5.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox8
+            // btn6
             // 
-            textBox8.BackColor = Color.DarkCyan;
-            textBox8.BorderStyle = BorderStyle.None;
-            textBox8.Font = new Font("Segoe UI", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox8.Location = new Point(418, 316);
-            textBox8.Multiline = true;
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(82, 64);
-            textBox8.TabIndex = 9;
-            textBox8.TextAlign = HorizontalAlignment.Center;
+            btn6.BackColor = Color.DarkCyan;
+            btn6.BorderStyle = BorderStyle.None;
+            btn6.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn6.Location = new Point(418, 316);
+            btn6.Multiline = true;
+            btn6.Name = "btn6";
+            btn6.Size = new Size(82, 64);
+            btn6.TabIndex = 9;
+            btn6.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox9
+            // btn9
             // 
-            textBox9.BackColor = Color.DarkCyan;
-            textBox9.BorderStyle = BorderStyle.None;
-            textBox9.Font = new Font("Segoe UI", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox9.Location = new Point(418, 385);
-            textBox9.Multiline = true;
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(82, 64);
-            textBox9.TabIndex = 8;
-            textBox9.TextAlign = HorizontalAlignment.Center;
-            textBox9.TextChanged += textBox9_TextChanged;
-            // 
-            // textBox12
-            // 
-            textBox12.BackColor = Color.DarkCyan;
-            textBox12.BorderStyle = BorderStyle.None;
-            textBox12.Location = new Point(23, 62);
-            textBox12.Multiline = true;
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(132, 30);
-            textBox12.TabIndex = 0;
-            textBox12.Text = "1";
-            textBox12.TextAlign = HorizontalAlignment.Center;
+            btn9.BackColor = Color.DarkCyan;
+            btn9.BorderStyle = BorderStyle.None;
+            btn9.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn9.Location = new Point(418, 385);
+            btn9.Multiline = true;
+            btn9.Name = "btn9";
+            btn9.Size = new Size(82, 64);
+            btn9.TabIndex = 8;
+            btn9.TextAlign = HorizontalAlignment.Center;
+            btn9.TextChanged += textBox9_TextChanged;
             // 
             // formjogodavelha
             // 
@@ -331,15 +362,15 @@
             BackColor = Color.Gainsboro;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(709, 461);
-            Controls.Add(textBox8);
-            Controls.Add(textBox9);
-            Controls.Add(textBox7);
-            Controls.Add(textBox4);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox2);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
+            Controls.Add(btn6);
+            Controls.Add(btn9);
+            Controls.Add(btn5);
+            Controls.Add(btn8);
+            Controls.Add(btn4);
+            Controls.Add(btn7);
+            Controls.Add(btn3);
+            Controls.Add(btn2);
+            Controls.Add(btn1);
             Controls.Add(panel1);
             ForeColor = Color.White;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -350,6 +381,8 @@
             opcoes.PerformLayout();
             empate.ResumeLayout(false);
             empate.PerformLayout();
+            placar.ResumeLayout(false);
+            placar.PerformLayout();
             jogadores.ResumeLayout(false);
             jogadores.PerformLayout();
             ResumeLayout(false);
@@ -360,25 +393,27 @@
 
         private Panel panel1;
         private Button reiniciar;
-        private Button button2;
+        private Button btnsair;
         private Button iniciar;
         private GroupBox opcoes;
-        private RadioButton O;
+        private RadioButton o;
         private RadioButton x;
         private GroupBox empate;
         private GroupBox placar;
         private GroupBox jogadores;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox11;
-        private TextBox textBox10;
-        private TextBox textBox12;
+        private TextBox btn1;
+        private TextBox btn2;
+        private TextBox btn3;
+        private TextBox btn8;
+        private TextBox btn7;
+        private TextBox btn4;
+        private TextBox btn5;
+        private TextBox btn6;
+        private TextBox btn9;
+        private TextBox jogador2;
+        private TextBox jogador1;
+        private TextBox txtempates;
+        private Label labelO;
+        private Label labelX;
     }
 }
