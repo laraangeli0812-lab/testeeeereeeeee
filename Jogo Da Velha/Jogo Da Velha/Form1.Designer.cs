@@ -131,7 +131,7 @@
             // 
             o.AutoSize = true;
             o.Font = new Font("BadaBoom BB", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
-            o.Location = new Point(91, 24);
+            o.Location = new Point(96, 26);
             o.Name = "o";
             o.Size = new Size(54, 44);
             o.TabIndex = 2;
@@ -195,21 +195,19 @@
             // 
             labelO.AutoSize = true;
             labelO.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelO.Location = new Point(19, 90);
+            labelO.Location = new Point(15, 77);
             labelO.Name = "labelO";
-            labelO.Size = new Size(40, 18);
+            labelO.Size = new Size(0, 18);
             labelO.TabIndex = 1;
-            labelO.Text = "O =";
             // 
             // labelX
             // 
             labelX.AutoSize = true;
             labelX.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelX.Location = new Point(19, 50);
+            labelX.Location = new Point(15, 37);
             labelX.Name = "labelX";
-            labelX.Size = new Size(44, 18);
+            labelX.Size = new Size(0, 18);
             labelX.TabIndex = 0;
-            labelX.Text = "X = ";
             // 
             // jogadores
             // 
@@ -248,7 +246,7 @@
             // 
             btn1.BackColor = Color.DarkCyan;
             btn1.BorderStyle = BorderStyle.None;
-            btn1.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn1.Font = new Font("BadaBoom BB", 39.75F, FontStyle.Regular, GraphicsUnit.Point);
             btn1.Location = new Point(234, 246);
             btn1.Multiline = true;
             btn1.Name = "btn1";
@@ -261,7 +259,7 @@
             // 
             btn2.BackColor = Color.DarkCyan;
             btn2.BorderStyle = BorderStyle.None;
-            btn2.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn2.Font = new Font("BadaBoom BB", 39.75F, FontStyle.Regular, GraphicsUnit.Point);
             btn2.Location = new Point(326, 246);
             btn2.Multiline = true;
             btn2.Name = "btn2";
@@ -273,7 +271,7 @@
             // 
             btn3.BackColor = Color.DarkCyan;
             btn3.BorderStyle = BorderStyle.None;
-            btn3.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn3.Font = new Font("BadaBoom BB", 39.75F, FontStyle.Regular, GraphicsUnit.Point);
             btn3.Location = new Point(418, 246);
             btn3.Multiline = true;
             btn3.Name = "btn3";
@@ -285,7 +283,7 @@
             // 
             btn8.BackColor = Color.DarkCyan;
             btn8.BorderStyle = BorderStyle.None;
-            btn8.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn8.Font = new Font("BadaBoom BB", 39.75F, FontStyle.Regular, GraphicsUnit.Point);
             btn8.Location = new Point(326, 386);
             btn8.Multiline = true;
             btn8.Name = "btn8";
@@ -297,7 +295,7 @@
             // 
             btn7.BackColor = Color.DarkCyan;
             btn7.BorderStyle = BorderStyle.None;
-            btn7.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn7.Font = new Font("BadaBoom BB", 39.75F, FontStyle.Regular, GraphicsUnit.Point);
             btn7.Location = new Point(234, 386);
             btn7.Multiline = true;
             btn7.Name = "btn7";
@@ -309,7 +307,7 @@
             // 
             btn4.BackColor = Color.DarkCyan;
             btn4.BorderStyle = BorderStyle.None;
-            btn4.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn4.Font = new Font("BadaBoom BB", 39.75F, FontStyle.Regular, GraphicsUnit.Point);
             btn4.Location = new Point(234, 316);
             btn4.Multiline = true;
             btn4.Name = "btn4";
@@ -321,7 +319,7 @@
             // 
             btn5.BackColor = Color.DarkCyan;
             btn5.BorderStyle = BorderStyle.None;
-            btn5.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn5.Font = new Font("BadaBoom BB", 39.75F, FontStyle.Regular, GraphicsUnit.Point);
             btn5.Location = new Point(326, 316);
             btn5.Multiline = true;
             btn5.Name = "btn5";
@@ -333,7 +331,7 @@
             // 
             btn6.BackColor = Color.DarkCyan;
             btn6.BorderStyle = BorderStyle.None;
-            btn6.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn6.Font = new Font("BadaBoom BB", 39.75F, FontStyle.Regular, GraphicsUnit.Point);
             btn6.Location = new Point(418, 316);
             btn6.Multiline = true;
             btn6.Name = "btn6";
@@ -345,7 +343,7 @@
             // 
             btn9.BackColor = Color.DarkCyan;
             btn9.BorderStyle = BorderStyle.None;
-            btn9.Font = new Font("BadaBoom BB", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            btn9.Font = new Font("BadaBoom BB", 39.75F, FontStyle.Regular, GraphicsUnit.Point);
             btn9.Location = new Point(418, 385);
             btn9.Multiline = true;
             btn9.Name = "btn9";
@@ -376,6 +374,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "formjogodavelha";
             Text = "Jogo Da Velha";
+            Load += formjogodavelha_Load;
             panel1.ResumeLayout(false);
             opcoes.ResumeLayout(false);
             opcoes.PerformLayout();

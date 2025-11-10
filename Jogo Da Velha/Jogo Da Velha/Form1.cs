@@ -2,7 +2,6 @@ namespace Jogo_Da_Velha
 {
     public partial class formjogodavelha : Form
     {
-        int X = 0, O = 0; empate
         public formjogodavelha()
         {
             InitializeComponent();
@@ -34,6 +33,11 @@ namespace Jogo_Da_Velha
         }
 
         private void placar_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formjogodavelha_Load(object sender, EventArgs e)
         {
 
         }
